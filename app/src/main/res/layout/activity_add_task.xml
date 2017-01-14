@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/new_order_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/new_order"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/new_order_editText"
+            style="@style/NewOrderEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/new_order_textview"
+            android:layout_marginTop="10dp" />
+
+        <LinearLayout
+            android:id="@+id/customer_name_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/new_order_editText"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/customer_name_text_layout"
+                style="@style/AddTaskBaseTextInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="9">
+
+                <AutoCompleteTextView
+                    android:id="@+id/customer_name_sugges_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/customer_name" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageButton
+                android:id="@+id/customer_name_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:src="@drawable/ic_delete_black_24dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/phone_number_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/customer_name_ll"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/phone_number_text_layout"
+                style="@style/AddTaskBaseTextInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="9">
+
+                <AutoCompleteTextView
+                    android:id="@+id/phone_number_sugges_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/phone_number"
+                    android:inputType="phone"
+                    android:maxLength="15" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageButton
+                android:id="@+id/phone_number_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:src="@drawable/ic_delete_black_24dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/delivery_date_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/phone_number_ll"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/delivery_date_text_layout"
+                style="@style/AddTaskBaseTextInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:enabled="false"
+                    android:hint="@string/pick_a_date"
+                    android:inputType="none"
+                    android:textSize="20sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageButton
+                android:id="@+id/date_image_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:src="@drawable/ic_date_range_black_36dp" />
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/particular_text_input"
+            style="@style/AddTaskBaseTextInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/delivery_date_ll">
+
+            <EditText
+                android:id="@+id/particular_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/particular" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/amount_text_input"
+            style="@style/AddTaskBaseTextInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/particular_text_input">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/amount"
+                android:inputType="number" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/add_task_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/amount_text_input"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="@color/background"
+            android:text="@string/done"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+</ScrollView>

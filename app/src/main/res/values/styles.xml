@@ -1,0 +1,92 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="LoginAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="LoginTextLayoutInput" parent="Widget.Design.TextInputLayout">
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+    </style>
+
+    <style name="BaseEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:ellipsize">start</item>
+    </style>
+
+    <style name="UserNameEditText" parent="BaseEditText">
+        <item name="android:hint">@string/email</item>
+        <item name="android:inputType">textEmailAddress</item>
+    </style>
+
+    <style name="PasswordEditText" parent="BaseEditText">
+        <item name="android:hint">@string/password</item>
+        <item name="android:inputType">textPassword</item>
+    </style>
+
+
+    <style name="NewOrderEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:ems">2</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:inputType">number</item>
+        <item name="android:text">@string/inital_order</item>
+    </style>
+
+    <style name="AddTaskBaseTextInput" parent="Widget.Design.TextInputLayout">
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+    </style>
+
+
+    <style name="CustomerNameTextView">
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:textSize">19sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="CustomerPhonenoTextView">
+        <item name="android:textSize">15sp</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="DashBoardCustomerTextView">
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="DashBoardPhoneNoTextView">
+        <item name="android:layout_gravity">top</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_marginTop">12dp</item>
+    </style>
+
+    <style name="DashBoardOrderIdTextView">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="DashBoardOrderDescription">
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="DashButton" parent="Base.Widget.AppCompat.ImageButton">
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@color/malibu_button</item>
+    </style>
+</resources>

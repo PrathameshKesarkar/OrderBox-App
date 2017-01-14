@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">OrderBox</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="invalid_email">Invalid email address</string>
+    <string name="empty_email">Email field is empty</string>
+    <string name="empty_password">Password field is empty</string>
+    <string name="new_order">New Order</string>
+    <string name="inital_order">0001</string>
+    <string name="customer_name">Customer Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="particular">Particular</string>
+    <string name="done">Done</string>
+    <string name="amount">Amount in INR</string>
+    <string name="pick_a_date">Pick a Date</string>
+    <string name="ready">Ready</string>
+    <string name="delivered">Delivered</string>
+    <string name="delay">Delay</string>
+</resources>

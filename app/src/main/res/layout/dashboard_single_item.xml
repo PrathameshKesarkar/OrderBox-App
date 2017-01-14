@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingBottom="12dp">
+
+    <com.madinfotech.orderbox.ui.screens.view.DayLeftView
+        android:id="@+id/day_left_view"
+        android:layout_alignBaseline="@+id/customer_detail_dash_ll"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="18dp"/>
+
+    <LinearLayout
+        android:id="@+id/customer_detail_dash_ll"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginStart="56dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/customer_name_dash_item"
+            style="@style/DashBoardCustomerTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:maxLines="1"
+            android:ellipsize="marquee"
+            android:text="Hello" />
+
+        <TextView
+            android:id="@+id/delivery_date_dash_item"
+            style="@style/DashBoardPhoneNoTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:text="21/7/12" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/order_id_dash_item"
+        style="@style/DashBoardOrderIdTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@id/customer_detail_dash_ll"
+        android:layout_below="@+id/customer_detail_dash_ll"
+        android:text="1203"/>
+
+    <TextView
+        android:id="@+id/order_desc_dash_item"
+        style="@style/DashBoardOrderDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/customer_detail_dash_ll"
+        android:layout_toEndOf="@+id/order_id_dash_item"
+        android:layout_toRightOf="@+id/order_id_dash_item" />
+
+    <LinearLayout
+        android:id="@+id/dash_item_action"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/customer_detail_dash_ll"
+        android:layout_below="@+id/order_desc_dash_item"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/dash_item_ready"
+            style="@style/DashButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ready" />
+
+        <Button
+            style="@style/DashButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:text="@string/delivered" />
+
+        <Button
+            style="@style/DashButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:text="@string/delay" />
+    </LinearLayout>
+</RelativeLayout>
